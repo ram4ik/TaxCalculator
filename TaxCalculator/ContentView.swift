@@ -13,14 +13,21 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Annual Salary")
+                .padding(.bottom, 75)
             
             TextField("Salary", text: $salary)
+                .padding()
+                .frame(width: 200)
+                .border(Color.black, width: 1)
+                .padding(.bottom, 75)
+                .keyboardType(.decimalPad)
             
             Button{
                 
             } label: {
                 Text("Calculate Tax")
             }
+            .buttonStyle(.borderedProminent)
         }
         .padding()
     }
