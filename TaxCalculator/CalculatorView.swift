@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CalculatorView.swift
 //  TaxCalculator
 //
 //  Created by test on 25.01.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CalculatorView: View {
     @State private var salary: String = ""
     
     var body: some View {
@@ -34,5 +34,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    CalculatorView()
 }
